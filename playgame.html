@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" , initial scale="1.0">
+	<title>Welcome to Ice and Fire</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="Sass/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid cardSelection">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a href="selectcharacter.html"><h1>Go Back to Card Select Page</h1></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="row displaySelectedCard">
+                        <div class="col-sm-7">
+                            <h3 class="displaySelectedCard__playerName" id="player_name">Select Player Name</h3>
+                        </div>
+    
+                        <div class="col-sm-5" >
+                            <h3 id="game_score" class="displaySelectedCard__playerScore">Player Score</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row moveCoin">
+                        <div class="col-sm-6 ">
+                            <p class="moveCoin__para" id="token_para">Roll the dice, coin will move on the board:</p>
+                        </div>
+                      
+                        <div class="col-sm-2 col-3">
+                            <button type="button" class="moveCoin__rollDice" id="roll_dice">Game Dice</button>
+                        </div>
+
+                        <div class="col-sm-4 col-3">
+                            <button type="button" class="moveCoin__boardCoin" id="game_token">Coin</button>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-sm-12 canvasContainer__gameBoard" id="game_board">
+                            <canvas id="board_canvas" width="900" height="900">
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> 
+        </div>
+    </div>  
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 p-0">
+                    <p class="footer_para">© 2020 Copyright:</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>   
+
+
+    <script type="text/javascript" src="javascript/diceplaygame.js"></script>
+</body>
+</html>
+

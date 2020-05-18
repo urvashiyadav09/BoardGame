@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" , initial scale="1.0">
+	<title>Welcome to Ice and Fire</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="Sass/style.css">
+</head>
+
+<body>
+
+	<div class="container-fluid cardSelection">
+		<div class="row">
+			<div class="col-sm-12 ">
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 ">
+							<a href="index.html"><h1>Go Back to Main Page</h1></a>
+						<div>
+					</div>
+				</div>
+
+
+
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-8">
+									<h3 id="selected_playerName">Select a Card</h3>
+								</div>
+								<div class="col-sm-4">
+									<a href="playgame.html"><button type="button" id="start_button" disabled><span id="startBtnText">Start Game</span></button></a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="container">
+							<div class="row displayCard">
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name="Rhaena-147AC">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/princess.png" alt="princess">
+											<div id="card1" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name="Rhaena-23AC">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/knightprincess.png" alt="knightprincess">
+											<div id="card2" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name="Rhaenyra-97AC">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/flowerprincess.png" alt="flowerprincess">
+											<div id="card3" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name="Rhaenys-74AC">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/fireprincess.png" alt="fireprincess">
+											<div id="card4" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name="Rickard Karstark">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/dragon.png" alt="dragon">
+											<div id="card5" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name="Rickard Stark">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/fireangelking.png" alt="fireangelking">
+											<div id="card6" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name="Rickon Stark">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/fireking.png" alt="fireking">
+											<div id="card7" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name="Robar Royce">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/dragonlord.png" alt="dragonlord">
+											<div id="card8" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name=" Robert Arryn">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/swordking.png" alt="swordking">
+											<div id="card9" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-2 col-sm-6 col-md-4">
+									<div class="displayCard__cardSelect" data-name="Robert Ashford">
+										<div class="displayCard__cardSelect__card">
+											<img class="displayCard__cardSelect__card__img" src="images/warriorking.png" alt="warriorking">
+											<div id="card10" class="displayCard__cardSelect__card__gameCard"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 p-0">
+							<p class="footer_para">© 2020 Copyright:</p>
+						</div>
+					</div>
+				</div>
+		
+			</footer>  
+
+			<script type="text/javascript" src="javascript/fetchcard.js"></script>
+			<script type="text/javascript" src="javascript/clickcard.js"></script>
+</body>
+
+</html>

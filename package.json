@@ -1,0 +1,19 @@
+{
+  "name": "modified_semester_project2",
+  "version": "1.0.0",
+  "description": "modify semester project 2 for portfolio2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
