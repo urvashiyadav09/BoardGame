@@ -1,0 +1,42 @@
+h1 {
+	color: $white-color;
+	font-size: 0.8em;
+	font-family: $heading3font;
+	padding-left: 2rem;
+	padding-top: 2rem;
+}
+h1:hover{
+	color: $button-background-color;
+}
+
+//media query
+@media (max-width:$media-breakpoint-ipadPro) {
+	h1 {
+		font-size: 1.2em;
+		padding-left: 0rem;
+		padding-top: 2rem;
+	}
+}
+
+@media (max-width:$media-breakpoint-ipad) {
+	h1 {
+		font-size: 0.9em;
+		padding-left: 0rem;
+		padding-top: 2rem;
+	}
+}
+@media (max-width:$media-breakpoint-pixel2) {
+	h1 {
+		font-size: 0.7em;
+		padding-left: 0rem;
+		padding-top: 1rem;
+	}
+}
+
+@media (max-width:$media-breakpoint-G4) {
+	h1 {
+		font-size: 0.7em;
+		padding-left: 0rem;
+		padding-top: 1rem;
+	}
+}

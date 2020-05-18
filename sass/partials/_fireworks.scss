@@ -1,0 +1,113 @@
+$gamefirewokparticlescount: 500;
+$particlesboxwidth: 3000;
+$particlesboxheight: 3000;
+// Create fireworks...
+$particlebox-shadow1: ();
+$particlebox-shadow2: ();
+
+
+@for $i from 0 through $gamefirewokparticlescount {
+	$particlebox-shadow1: $particlebox-shadow1,
+		random($particlesboxwidth)-$particlesboxwidth / 2.5 + px random($particlesboxheight)-$particlesboxheight / 3 + px hsl(random(250), 90%, 50%);
+	$particlebox-shadow2: $particlebox-shadow2, 0 0 $white-color;
+}
+
+@mixin keyframes ($gameWinnerAnimation) {
+	@-webkit-keyframes #{$gameWinnerAnimation} {
+		@content;
+	}
+
+	@-moz-keyframes #{$gameWinnerAnimation} {
+		@content;
+	}
+
+	@-o-keyframes #{$gameWinnerAnimation} {
+		@content;
+	}
+
+	@-ms-keyframes #{$gameWinnerAnimation} {
+		@content;
+	}
+
+	@keyframes #{$gameWinnerAnimation} {
+		@content;
+	}
+}
+
+@mixin fireworkDelay($fireworkAnimationSetting) {
+	fireworkDelay: $fireworkAnimationSetting;
+}
+
+@mixin fireworkDuration($fireworkAnimationSetting) {
+	fireworkDuration: $fireworkAnimationSetting;
+}
+
+@mixin animation($fireworkAnimationSetting) {
+	animation: $fireworkAnimationSetting;
+}
+
+@mixin fireworkTransform($fireworkAnimationSetting) {
+	fireworkTransform: $fireworkAnimationSetting;
+}
+
+.gameWinner {
+	overflow: hidden;
+
+	&__totalFirework>&__totalFirework__firstAnimation, &__totalFirework>&__totalFirework__lastAnimation {
+		position: absolute;
+		width: 4px;
+		height: 4px;
+		box-shadow: $particlebox-shadow2;
+		@include animation((1.5s fireworkBoom ease-out infinite forwards, 1.5s fireworkStretch ease-in infinite backwards, 7.5s fireworkPagePosition linear infinite forwards));
+	}
+
+	&__totalFirework>&__totalFirework__lastAnimation {
+		@include fireworkDelay((1.35s, 1.35s, 1.35s));
+		@include fireworkDuration((1.35s, 1.35s, 6.75s));
+	}
+}
+
+@include keyframes(fireworkBoom) {
+	to {
+		box-shadow: $particlebox-shadow1;
+	}
+}
+
+@include keyframes(fireworkStretch) {
+	to {
+		@include fireworkTransform(TranslateY(180px));
+	}
+}
+
+@include keyframes(fireworkPagePosition) {
+	0%, 19% {
+		margin-top: 10%;
+		margin-left: 20%;
+		margin-bottom: 30%;
+	}
+
+	20%, 39% {
+		margin-top: 30%;
+		margin-left: 42%;
+		margin-bottom: 30%;
+	}
+
+	40%, 59% {
+		margin-top: 25%;
+		margin-left: 85%;
+		margin-bottom: 30%;
+	}
+
+	60%, 79% {
+		margin-top: 20%;
+		margin-left: 30%;
+		margin-bottom: 30%;
+	}
+
+	80%, 99% {
+		margin-top: 10%;
+		margin-left: 60%;
+		margin-bottom: 50%;
+	}
+}
+

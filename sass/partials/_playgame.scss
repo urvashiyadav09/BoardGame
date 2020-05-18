@@ -1,0 +1,276 @@
+.displaySelectedCard {
+	&__playerName {
+		color: $select-card-heading3-color;
+		padding-top: 5rem;
+		padding-bottom: none;
+		font-size: 1.6em;
+		font-family: $heading3font;
+	}
+
+	&__playerScore {
+		color: $select-card-heading3-color;
+		padding-top: 5rem;
+		padding-bottom: none;
+		font-size: 1.5em;
+		font-family: $heading3font;
+	}
+}
+.moveCoin {
+	&__para {
+		color: $white-color;
+		font-family: $heading3font;
+		font-size: 1.3em;
+		padding-top: 2.5rem;
+	}
+
+	&__rollDice {
+		width: 4rem;
+		height: 4rem;
+		border-radius: 1rem;
+		cursor: pointer;
+		background-color: $button-hover-color;
+		color: $white-color;
+		border: none;
+		font-size: 0.8em;
+		font-weight: bold;
+		font-family: $buttonfont;
+		text-decoration: none;
+		margin-top: 2rem;
+	}
+
+	&__rollDice:active {
+		animation: diceShake 0.09s infinite;
+	}
+
+	&__rollDice:hover {
+		box-shadow: 0 0 8px $card-hover-color;
+	}
+
+	&__boardCoin {
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 1.5rem;
+		margin-top: 2.2rem;
+		background-color: $startGame-button-color;
+		border: none;
+		color: $white-color;
+		font-family: $buttonfont;
+	}
+}
+
+@keyframes diceShake {
+	40% {
+		transform: rotate(10deg) translateX(4px);
+	}
+
+	100% {
+		transform: rotate(-10deg) translateX(-4px);
+	}
+}
+
+#board_canvas {
+	border: 4px solid $boardCanvas-background-color;
+	width: 65%;
+	margin-top: 2rem;
+	margin-left: 4rem;
+	margin-bottom: 2rem;
+}
+//media query
+@media (max-width:$media-breakpoint-laptopHidpi) {
+	#board_canvas {
+		margin-bottom: 3rem;
+	}
+}
+@media (max-width:$media-breakpoint-ipadPro){
+	#board_canvas {
+		width: 100%;
+		margin-left: 0rem;
+		margin-bottom: 2rem;
+	}
+	.displaySelectedCard {
+		&__playerName {
+			padding-top: 3rem;
+			font-size: 1.5em;
+		}
+		&__playerScore {
+			padding-top: 3rem;
+			padding-bottom: none;
+			font-size: 1.5em;
+		}
+	}
+	.moveCoin {
+
+		&__para {
+			font-size: 1.5em;
+			padding-top: 1.8rem;
+		}
+
+		&__rollDice {
+			width: 5.5rem;
+			height: 5.5rem;
+			border-radius: 1.5rem;
+			font-size: 1.4em;
+			margin-top: 2rem;
+			margin-left: 1rem;
+		}
+
+		&__boardCoin {
+			width: 4.5rem;
+			height: 4.5rem;
+			border-radius: 2.1rem;
+			margin-top: 2.5rem;
+			margin-left: 2rem;
+			font-size: 1.5em;
+		}
+	}
+}
+
+@media (max-width:$media-breakpoint-ipad){
+	#board_canvas {
+		width: 100%;
+		margin-left: 0rem;
+		margin-bottom: 2rem;
+	}
+	.displaySelectedCard {
+		&__playerName {
+			padding-top: 3rem;
+			font-size: 1.2em;
+		}
+		&__playerScore {
+			padding-top: 3rem;
+			padding-bottom: none;
+			font-size: 1.2em;
+		}
+	}
+
+	.moveCoin {
+
+		&__para {
+			font-size: 1.1em;
+			padding-top: 1.5rem;
+		}
+		&__rollDice {
+			width: 4rem;
+			height: 4rem;
+			border-radius: 1rem;
+			font-size: 1em;
+			margin-top: 1.2rem;
+		   margin-left: 1rem;
+		}
+		&__boardCoin {
+			width: 3rem;
+			height: 3rem;
+			border-radius: 2rem;
+			margin-top: 1.7rem;	
+			margin-left: 2rem;
+		}
+	}
+}
+
+
+@media (max-width:$media-breakpoint-pixel2) {
+	
+	#board_canvas {
+		width: 100%;
+		margin-left: 0rem;
+		margin-bottom: 2rem;
+	}
+
+	.displaySelectedCard {
+		&__playerName {
+			padding-top: 2rem;
+			font-size: 1em;
+		}
+	
+		&__playerScore {
+			padding-top: 0rem;
+			padding-bottom: none;
+			font-size: 1em;
+		}
+	}
+	.moveCoin {
+		&__para {
+			font-size: 1em;
+			padding-top: 1.5rem;
+		}
+		&__rollDice {
+			width: 3.5rem;
+			height: 3.5rem;
+			border-radius: 1rem;
+			font-size: 0.9em;
+			margin-top: 0rem;
+		   margin-left: 1rem;
+		}
+		&__boardCoin {
+			width: 3rem;
+			height: 3rem;
+			border-radius: 2rem;
+			margin-top: 0.5rem;
+			margin-left: 1.2rem;
+			font-size: 0.8em;	
+		}
+	}
+}
+
+@media (max-width:$media-breakpoint-G4) {
+	
+	#board_canvas {
+		width: 100%;
+		margin-left: 0rem;
+		margin-bottom: 2rem;
+	}
+	
+	.displaySelectedCard {
+		&__playerName {
+			padding-top: 2rem;
+			font-size: 1em;
+		}
+	
+		&__playerScore {
+			padding-top: 0rem;
+			padding-bottom: none;
+			font-size: 1em;
+		}
+	}
+	.moveCoin {
+		&__para {
+			font-size: 1em;
+			padding-top: 1.5rem;
+		}
+		&__rollDice {
+			width: 3.5rem;
+			height: 3.5rem;
+			border-radius: 1rem;
+			font-size: 0.8em;
+			margin-top: 0rem;
+		   margin-left: 1rem;
+		}
+		&__boardCoin {
+			width: 3rem;
+			height: 3rem;
+			border-radius: 2rem;
+			margin-top: 0.2rem;	
+		}
+	}
+}
+
+@media (max-width:$media-breakpoint-iphoneSE) {
+		#board_canvas {
+		width: 100%;
+		margin-left: 0rem;
+	}
+	.moveCoin {
+		&__rollDice {
+			font-size: 0.7em;
+			width: 3rem;
+			height: 3rem;
+			border-radius: 1rem;
+		}
+		&__boardCoin {
+			width: 2.6rem;
+			height: 2.6rem;
+			border-radius: 1.3rem;
+			font-size: 0.8em;
+		}	
+	}
+}	

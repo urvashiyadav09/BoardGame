@@ -1,0 +1,242 @@
+#selected_playerName {
+	color: $select-card-heading3-color;
+	padding-left: 12rem;
+	padding-top: 5rem;
+	padding-bottom: none;
+	font-size: 1.8em;
+	font-family: $heading3font;
+}
+#start_button {
+	background-color: $startGame-button-color;
+	border: none;
+	height: 2.5rem;
+	width: 30%;
+	margin-top: 4.5rem;
+}
+#startBtnText {
+	color: $white-color;
+	font-family: $buttonfont;
+	font-size: 1.2em;
+}
+#start_button:disabled {
+	background-color: $disabled-button-color;
+}
+
+.displayCard {
+	&__cardSelect {
+		&__card {
+			background-color: $cardBackground-color;
+			width: 98%;
+			margin-top: 1.5rem;
+			&__img {
+				padding-left: 1.5rem;
+				padding-top: 0.5rem;
+			}
+			&__gameCard {
+				margin-left: 0.5rem;
+				margin-top: 0;
+				color: $goBackPage-link-color;
+				width: 80%;
+				font-family: $heading3font;
+				font-size: 1em;
+			}
+		}
+	}
+	&__cardSelect:hover {
+		box-shadow: 0 0 18px $card-hover-color;
+	}
+	&__cardSelect.active {
+		box-shadow: 0 0 18px $card-hover-color;
+	}
+}
+.setcard {
+	display: block;
+	width: 120%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+//media query
+@media (max-width:$media-breakpoint-laptopHidpi) {
+	#selected_playerName {
+		padding-left: 3rem;
+		padding-top: 3.5rem;
+	}
+	#start_button {
+		width: 50%;
+		margin-top: 3.5rem;
+		margin-left: 6rem;
+	}
+}
+
+@media (max-width:$media-breakpoint-ipadPro) {
+	.displayCard {
+		&__cardSelect {
+			&__card {
+				&__img {
+					width: 95%;
+				}
+				&__gameCard {
+					font-size: 1.5em;
+				}
+			}
+		}
+	}
+	#selected_playerName {
+		padding-left: 3rem;
+		padding-top: 2rem;
+		font-size: 1.5em;
+	}
+	#start_button {
+		height: 2.4rem;
+		width: 70%;
+		margin-top: 1.8rem;
+		margin-right: 0;
+		margin-left: 3rem;
+	}
+	#startBtnText {
+		font-weight: none;
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width:$media-breakpoint-ipad) {
+	.displayCard {
+		&__cardSelect {
+			&__card {
+				&__img {
+					width: 90%;
+				}
+				&__gameCard {
+					font-size: 1.1em;
+				}
+			}
+		}
+	}
+	#selected_playerName {
+		padding-left: 4rem;
+		padding-top: 2rem;
+		font-size: 1.5em;
+	}
+	#start_button {
+		height: 2.4rem;
+		width: 70%;
+		margin-top: 1.8rem;
+		margin-right: 0;
+		margin-left: 1rem;
+	}
+	#startBtnText {
+		font-weight: none;
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width:$media-breakpoint-microsoftlumia1) {
+	#selected_playerName {
+		padding-left: 1rem;
+		padding-top: 2rem;
+		font-size: 1em;
+	}
+	#start_button {
+		height: 2rem;
+		width: 70%;
+		margin-top: 1.6rem;
+		margin-left: 0.22rem;
+	}
+	#startBtnText {
+		font-weight: none;
+		font-size: 0.8em;
+	}
+
+	.displayCard {
+		&__cardSelect {
+			&__card {
+				&__img {
+					width: 70%;
+				}
+				&__gameCard {
+					font-size: 0.9em;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:$media-breakpoint-pixel2) {
+	#selected_playerName {
+		padding-left: 0;
+		font-size: 1.1em;
+	}
+
+	#start_button {
+		height: 2rem;
+		width: 40%;
+	}
+
+	#startBtnText {
+		font-weight: none;
+		font-size: 1em;
+	}
+
+	.displayCard {
+		&__cardSelect {
+			&__card {
+				&__img {
+					width: 70%;
+				}
+				&__gameCard {
+					font-size: 0.9em;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:$media-breakpoint-G4) {
+	#selected_playerName {
+		padding-left: 0;
+		padding-top: 2rem;
+		font-size: 1em;
+	}
+	#start_button {
+		height: 2rem;
+		width: 40%;
+		margin-top: 1rem;
+		margin-right: 7.5rem;
+	}
+	#startBtnText {
+		font-weight: none;
+		font-size: 0.8em;
+	}
+	.displayCard {
+		&__cardSelect {
+			&__card {
+				&__img {
+					width: 80%;
+				}
+				&__gameCard {
+					font-size: 0.9em;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:$media-breakpoint-iphoneSE) {
+	#start_button {
+		width: 45%;
+	}
+	.displayCard {
+		&__cardSelect {
+			&__card {
+				&__img {
+					width: 85%;
+				}
+
+				&__gameCard {
+					font-size: 0.9em;
+				}
+			}
+		}
+	}
+}

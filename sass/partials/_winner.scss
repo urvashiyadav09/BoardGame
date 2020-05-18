@@ -1,0 +1,140 @@
+.gameWinner {
+	background: #000000;
+	&__totalFirework{
+		height: 30.8rem;
+		width: 100%;
+	}
+}
+
+#winner_name {
+	font-size: 2.5em;
+	color: $white-color;
+	animation: textglow 2s ease-in-out infinite alternate;
+	font-family: $textfont;
+	margin-top: 15%;
+	text-align: center;
+}
+
+@keyframes textglow {
+	from {
+		text-shadow: 0 0 5px $white-color, 0 0 12px $winnerName-glow-text;
+	}
+
+	to {
+		text-shadow: 0 0 5px $white-color, 0 0 12px $winnerName-glow-text;
+	}
+}
+//media query
+
+
+@media (max-width:$media-breakpoint-laptopHidpi) {
+	.gameWinner {
+		&__totalFirework {
+			height: 28.8rem;
+		}
+	}
+	#winner_name {
+		font-size: 2.4em;
+		margin-top: 18%;
+		}
+}
+@media (max-width:$media-breakpoint-laptopMdpi) {
+	.gameWinner {
+		&__totalFirework {
+			height: 24.2rem;
+		}
+	}
+	#winner_name {
+		margin-top: 18%;
+	}	
+}
+@media (max-width:$media-breakpoint-ipadPro) {
+	.gameWinner {
+		&__totalFirework {
+			height: 32rem;
+		}
+	}
+
+	#winner_name {
+		margin-top: 50%;
+	
+	}
+
+	}
+@media (max-width:$media-breakpoint-ipad) {
+.gameWinner {
+	&__totalFirework {
+		height: 19rem;
+	}
+}
+
+#winner_name {
+	margin-top: 50%;
+		font-size: 2em;
+}
+}
+
+@media (max-width:$media-breakpoint-pixel2) {
+.gameWinner {
+	&__totalFirework {
+		height: 17.5rem;
+	}
+}
+
+#winner_name {
+	margin-top: 50%;
+	font-size: 2em;
+}
+}
+
+@media (max-width:$media-breakpoint-piixel2plus) {
+.gameWinner {
+	&__totalFirework {
+		height: 22.2rem;
+	}
+}
+	
+	#winner_name {
+		margin-top: 50%;
+		font-size: 1em;
+	}
+}
+
+@media (max-width:$media-breakpoint-iphoneX) {
+.gameWinner {
+	&__totalFirework {
+		height: 22.8rem;
+	}
+}
+	#winner_name {
+		margin-top: 50%;
+	font-size: 1em;
+	}
+}
+
+@media (max-width:$media-breakpoint-G4) {
+
+	.gameWinner {
+		&__totalFirework {
+			height: 14.3rem;
+		}
+	}
+
+	#winner_name {
+		margin-top: 50%;
+		font-size: 1em;
+	}
+}
+@media (max-width:$media-breakpoint-iphoneSE) {
+
+	.gameWinner {
+		&__totalFirework {
+			height: 11.8rem;
+		}
+	}
+
+	#winner_name {
+		margin-top: 50%;
+		font-size: 1em;
+	}
+}
