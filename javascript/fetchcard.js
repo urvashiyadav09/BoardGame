@@ -16,8 +16,6 @@ function gameCharacters(gameResult) {
 			j = j + 1;
 
 			var card = 'card' + j;
-			console.log(card);
-
 			var cardInfo = document.createElement('p');
 
 			cardInfo.innerHTML += '<span class="setcard"><b>Name:&nbsp;&nbsp;</b>' + gameResult[i].name + '</span>';

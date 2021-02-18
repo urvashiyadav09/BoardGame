@@ -1,17 +1,18 @@
 #selected_playerName {
 	color: $select-card-heading3-color;
-	padding-left: 12rem;
 	padding-top: 5rem;
 	padding-bottom: none;
 	font-size: 1.8em;
 	font-family: $heading3font;
+	text-align: center;
 }
 #start_button {
 	background-color: $startGame-button-color;
 	border: none;
 	height: 2.5rem;
-	width: 30%;
-	margin-top: 4.5rem;
+	width: 55%;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
 }
 #startBtnText {
 	color: $white-color;
@@ -27,6 +28,7 @@
 		&__card {
 			background-color: $cardBackground-color;
 			width: 98%;
+			height: 60vh;
 			margin-top: 1.5rem;
 			&__img {
 				padding-left: 1.5rem;
@@ -56,6 +58,34 @@
 	padding-bottom: 0.5rem;
 }
 
+.PlayerSelection{
+	border: 3px solid $button-background-color;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+	&__heading{
+		text-align: center;
+		color: $select-card-heading3-color;
+		font-size: 1.8em;
+		font-family: $heading3font;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	&__players{
+		text-align: center;
+		color:$card-hover-color;
+		font-size: 1.8em;
+		font-family: $heading3font;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	&__playersSelectList{
+		margin-left: 5rem;
+	}
+}
+
 //media query
 @media (max-width:$media-breakpoint-laptopHidpi) {
 	#selected_playerName {
@@ -67,12 +97,20 @@
 		margin-top: 3.5rem;
 		margin-left: 6rem;
 	}
+	.displayCard {
+		&__cardSelect {
+			&__card {
+				height: 70vh;
+			}
+		}
+	}
 }
 
 @media (max-width:$media-breakpoint-ipadPro) {
 	.displayCard {
 		&__cardSelect {
 			&__card {
+				height: 55vh;
 				&__img {
 					width: 95%;
 				}
@@ -90,7 +128,7 @@
 	#start_button {
 		height: 2.4rem;
 		width: 70%;
-		margin-top: 1.8rem;
+		margin-top: 4rem;
 		margin-right: 0;
 		margin-left: 3rem;
 	}
@@ -104,6 +142,7 @@
 	.displayCard {
 		&__cardSelect {
 			&__card {
+				height: 55vh;
 				&__img {
 					width: 90%;
 				}
@@ -121,116 +160,146 @@
 	#start_button {
 		height: 2.4rem;
 		width: 70%;
-		margin-top: 1.8rem;
+		margin-top: 4rem;
 		margin-right: 0;
-		margin-left: 1rem;
+		margin-left: 2rem;
 	}
 	#startBtnText {
 		font-weight: none;
 		font-size: 1.2em;
 	}
-}
 
-@media (max-width:$media-breakpoint-microsoftlumia1) {
-	#selected_playerName {
-		padding-left: 1rem;
-		padding-top: 2rem;
-		font-size: 1em;
-	}
-	#start_button {
-		height: 2rem;
-		width: 70%;
-		margin-top: 1.6rem;
-		margin-left: 0.22rem;
-	}
-	#startBtnText {
-		font-weight: none;
-		font-size: 0.8em;
-	}
-
-	.displayCard {
-		&__cardSelect {
-			&__card {
-				&__img {
-					width: 70%;
-				}
-				&__gameCard {
-					font-size: 0.9em;
-				}
-			}
+	.PlayerSelection{
+			
+		&__heading{
+			text-align: left;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+	
+		&__players{
+			text-align: left;
+			padding-left: 3rem;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+	
+		&__playersSelectList{
+			margin-left: 1rem;
 		}
 	}
 }
+
+
 
 @media (max-width:$media-breakpoint-pixel2) {
-	#selected_playerName {
-		padding-left: 0;
-		font-size: 1.1em;
-	}
-
 	#start_button {
-		height: 2rem;
-		width: 40%;
+		width: 45%;
+		margin-top: 2rem;
 	}
-
-	#startBtnText {
-		font-weight: none;
-		font-size: 1em;
-	}
-
 	.displayCard {
 		&__cardSelect {
 			&__card {
+				height: 70vh;
 				&__img {
-					width: 70%;
+					width: 75%;
+					height: 40vh;
 				}
+	
 				&__gameCard {
 					font-size: 0.9em;
 				}
 			}
 		}
 	}
+	
+	.PlayerSelection{
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 0rem;
+			
+		&__heading{
+			text-align: left;
+			font-size: 1.1em;
+			padding-top: 1rem;
+			padding-bottom: 0rem;
+		}
+	
+		&__players{
+			text-align: left;
+			color:$card-hover-color;
+			font-size: 1.2em;
+			font-family: $heading3font;
+			padding-top: 2rem;
+			padding-bottom: 1rem;
+		}
+	
+		&__playersSelectList{
+			margin-left: 1rem;
+		}
+	}	
 }
 
 @media (max-width:$media-breakpoint-G4) {
-	#selected_playerName {
-		padding-left: 0;
-		padding-top: 2rem;
-		font-size: 1em;
-	}
 	#start_button {
-		height: 2rem;
-		width: 40%;
-		margin-top: 1rem;
-		margin-right: 7.5rem;
-	}
-	#startBtnText {
-		font-weight: none;
-		font-size: 0.8em;
+		width: 45%;
+		margin-top: 2rem;
 	}
 	.displayCard {
 		&__cardSelect {
 			&__card {
+				height: 85vh;
 				&__img {
-					width: 80%;
+					width: 85%;
+					height: 50vh;
 				}
+	
 				&__gameCard {
 					font-size: 0.9em;
 				}
 			}
 		}
 	}
+	
+	.PlayerSelection{
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 0rem;
+			
+		&__heading{
+			text-align: left;
+			font-size: 1.1em;
+			padding-top: 1rem;
+			padding-bottom: 0rem;
+		}
+	
+		&__players{
+			text-align: left;
+			color:$card-hover-color;
+			font-size: 1.2em;
+			font-family: $heading3font;
+			padding-top: 2rem;
+			padding-bottom: 1rem;
+		}
+	
+		&__playersSelectList{
+			margin-left: 1rem;
+		}
+	}	
 }
 
 @media (max-width:$media-breakpoint-iphoneSE) {
 	#start_button {
 		width: 45%;
+		margin-top: 2rem;
 	}
 	.displayCard {
 		&__cardSelect {
 			&__card {
+				height: 85vh;
 				&__img {
 					width: 85%;
+					height: 50vh;
 				}
 
 				&__gameCard {
@@ -239,4 +308,31 @@
 			}
 		}
 	}
+
+	.PlayerSelection{
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 0rem;
+			
+		&__heading{
+			text-align: left;
+			font-size: 1.1em;
+			padding-top: 1rem;
+			padding-bottom: 0rem;
+		}
+	
+		&__players{
+			text-align: left;
+			color:$card-hover-color;
+			font-size: 1.2em;
+			font-family: $heading3font;
+			padding-top: 2rem;
+			padding-bottom: 1rem;
+		}
+	
+		&__playersSelectList{
+			margin-left: 1rem;
+		}
+	}
+	
 }

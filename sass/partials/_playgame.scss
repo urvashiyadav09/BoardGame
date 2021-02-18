@@ -1,7 +1,7 @@
 .displaySelectedCard {
 	&__playerName {
 		color: $select-card-heading3-color;
-		padding-top: 5rem;
+		padding-top: 1rem;
 		padding-bottom: none;
 		font-size: 1.6em;
 		font-family: $heading3font;
@@ -9,18 +9,32 @@
 
 	&__playerScore {
 		color: $select-card-heading3-color;
-		padding-top: 5rem;
+		padding-top: 1rem;
 		padding-bottom: none;
 		font-size: 1.5em;
 		font-family: $heading3font;
 	}
+	&__playerStart{
+		color: $winnerName-glow-text;
+		padding-top: 1rem;
+		padding-bottom: none;
+		font-size: 1.5em;
+		font-family: $heading3font;
+	}
+	&__playerOverlap{
+		color: $winnerName-glow-text;
+		padding-top: 1rem;
+		padding-bottom: none;
+		font-size: 1.5em;
+		font-family: $heading3font;
+	}	
 }
 .moveCoin {
 	&__para {
 		color: $white-color;
 		font-family: $heading3font;
 		font-size: 1.3em;
-		padding-top: 2.5rem;
+		padding-top: 0rem;
 	}
 
 	&__rollDice {
@@ -46,12 +60,22 @@
 		box-shadow: 0 0 8px $card-hover-color;
 	}
 
-	&__boardCoin {
+	&__boardCoin1 {
 		width: 3.5rem;
 		height: 3.5rem;
 		border-radius: 1.5rem;
 		margin-top: 2.2rem;
 		background-color: $startGame-button-color;
+		border: none;
+		color: $white-color;
+		font-family: $buttonfont;
+	}
+	&__boardCoin2 {
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 1.5rem;
+		margin-top: 2.2rem;
+		background-color: $boardCoin2Color;
 		border: none;
 		color: $white-color;
 		font-family: $buttonfont;
@@ -89,11 +113,11 @@
 	}
 	.displaySelectedCard {
 		&__playerName {
-			padding-top: 3rem;
+			padding-top: 1rem;
 			font-size: 1.5em;
 		}
 		&__playerScore {
-			padding-top: 3rem;
+			padding-top: 1rem;
 			padding-bottom: none;
 			font-size: 1.5em;
 		}
@@ -133,11 +157,11 @@
 	}
 	.displaySelectedCard {
 		&__playerName {
-			padding-top: 3rem;
+			padding-top: 1rem;
 			font-size: 1.2em;
 		}
 		&__playerScore {
-			padding-top: 3rem;
+			padding-top: 1rem;
 			padding-bottom: none;
 			font-size: 1.2em;
 		}
@@ -178,14 +202,22 @@
 
 	.displaySelectedCard {
 		&__playerName {
-			padding-top: 2rem;
+			padding-top: 1rem;
 			font-size: 1em;
 		}
 	
 		&__playerScore {
-			padding-top: 0rem;
+			padding-top: 1rem;
 			padding-bottom: none;
 			font-size: 1em;
+		}
+		&__playerStart{
+			font-size: 1em;
+			padding-top: 0rem;
+		}
+		&__playerOverlap{
+			font-size: 1em;
+			padding-top: 0rem;
 		}
 	}
 	.moveCoin {
@@ -222,20 +254,28 @@
 	
 	.displaySelectedCard {
 		&__playerName {
-			padding-top: 2rem;
+			padding-top: 1rem;
 			font-size: 1em;
 		}
 	
 		&__playerScore {
-			padding-top: 0rem;
+			padding-top: 1rem;
 			padding-bottom: none;
 			font-size: 1em;
+		}
+		&__playerStart{
+			font-size: 1em;
+			padding-top: 0rem;
+		}
+		&__playerOverlap{
+			font-size: 1em;
+			padding-top: 0rem;
 		}
 	}
 	.moveCoin {
 		&__para {
 			font-size: 1em;
-			padding-top: 1.5rem;
+			padding-top: 0rem;
 		}
 		&__rollDice {
 			width: 3.5rem;
@@ -245,12 +285,12 @@
 			margin-top: 0rem;
 		   margin-left: 1rem;
 		}
-		&__boardCoin {
-			width: 3rem;
-			height: 3rem;
-			border-radius: 2rem;
-			margin-top: 0.2rem;	
-		}
+		&__boardCoin1, &__boardCoin2 {
+			width: 2.8rem;
+			height: 2.8rem;
+			border-radius: 1.3rem;
+			font-size: 0.8em;
+		}	
 	}
 }
 
@@ -259,16 +299,31 @@
 		width: 100%;
 		margin-left: 0rem;
 	}
+
+	.displaySelectedCard {
+		&__playerStart{
+			font-size: 1em;
+			padding-top: 0rem;
+		}
+		&__playerOverlap{
+			font-size: 1em;
+			padding-top: 0rem;
+		}
+	}
 	.moveCoin {
+		&__para {
+			font-size: 1em;
+			padding-top: 0rem;
+		}
 		&__rollDice {
 			font-size: 0.7em;
 			width: 3rem;
 			height: 3rem;
 			border-radius: 1rem;
 		}
-		&__boardCoin {
-			width: 2.6rem;
-			height: 2.6rem;
+		&__boardCoin1, &__boardCoin2 {
+			width: 2.8rem;
+			height: 2.8rem;
 			border-radius: 1.3rem;
 			font-size: 0.8em;
 		}	
